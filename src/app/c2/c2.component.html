@@ -1,0 +1,16 @@
+<p>Serviço - C2</p>
+
+<div>
+  <div *ngFor="let item of afazeresService.lista">
+    <p>{{item}}</p>
+  </div>
+  <button (click)="afazeresService.adicionarItem()">Adicionar em todos</button>
+</div>
+
+<div>
+  <p>{{afazeres.contador}}</p>
+  <div  *ngFor="let item of afazeres.lista" >
+    <p>{{item}}</p>
+  </div>
+  <button (click)="afazeres.add('novo Item')" >Adicionar no C2</button>
+</div>

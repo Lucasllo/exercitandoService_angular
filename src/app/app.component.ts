@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AfazeresService } from './services/afazeres.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exercitandoService';
+
+  constructor(public afazeresService: AfazeresService){}
+
+// ao colocar private no parametro do construtor eu estou fazendo o mesmo que
+//  afazeresService: AfazeresService
+//  construtor(afazeresService: AfazeresService){
+//    this.afazeresService = afazeresService;
+//  }
+
 }
